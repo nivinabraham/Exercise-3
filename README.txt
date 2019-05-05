@@ -6,7 +6,7 @@ Troubleshooting Redis server issue
 Below are the troubleshooting steps followed.
 
 1) SSH to the Linux server
-2) Tried starting the redis server by sudo systmctl start redis
+2) Tried starting the redis server by sudo systemctl start redis
 3) It gave me an error "Job for redis-server.service failed because the control process exited with error code. See "systemctl status redis-server.sevice" and " Journalctl-xe"
 4) checked the redis.conf file about the configuration to find if all conf is set right, din't notice anything fishy.
 5) Tried executing the journalctl-xe to see why the redis server is failing to start and noticed the logfile /var/log/redis-server.log throwing an error.
